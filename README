@@ -1,0 +1,12 @@
+h1. Validates Non Gibberish Of
+
+h3. Written by Brandon Keene <bkeene AT gmail DOT com>
+
+An ActiveRecord style validation method to prevent non-sensical or non-word
+content from being saved.
+
+"Gibberish" is a vague term, but basically this method guards against text that
+contains too little whitespace, too many consecutive characters, excessive
+punctuation, etc.  It works for about 80% of the cases.  Anything more complex
+should be handled by some kind of Bayesian classifier, but that might be 
+overkill for simple applications.
